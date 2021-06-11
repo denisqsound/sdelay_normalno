@@ -1,0 +1,1 @@
+# sdelay_normalno
