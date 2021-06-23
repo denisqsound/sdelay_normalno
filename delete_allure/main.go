@@ -13,7 +13,9 @@ func main() {
 		"/Users/den/Desktop/Git/integration-tests/tests/backend/_out/allure_reports"}
 
 	for _, value := range dirPath {
+
 		err := os.RemoveAll(value)
+
 		if err != nil {
 			return
 		}

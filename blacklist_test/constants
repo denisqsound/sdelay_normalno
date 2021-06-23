@@ -1,0 +1,1 @@
+url := fmt.Sprintf("%s/v1/login", baseUrl)
