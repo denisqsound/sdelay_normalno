@@ -13,4 +13,4 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
-/blacklist_test/secret
+/blacklist_test/secret.yaml
