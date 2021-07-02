@@ -1,7 +1,8 @@
 package main
 
 import (
-	"github.com/denisqsound/sdelay_normalno/blacklist_test/http"
+	"fmt"
+	"github.com/denisqsound/sdelay_normalno/blacklist_test/api"
 	"github.com/joho/godotenv"
 	"log"
 )
@@ -14,6 +15,7 @@ func init() {
 }
 
 func main() {
-	new(http.GetRequest)
+	auth := api.GetAuth()
+	fmt.Println(auth)
 
 }
