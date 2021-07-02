@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-
 	"github.com/levigross/grequests"
 )
 
@@ -17,7 +16,7 @@ const (
 
 func GetPlanet() {
 	//url := fmt.Printf(Planets, BaseUrl)
-	url := fmt.Sprintf(Planets, BaseUrl)
+	url := fmt.Sprintf()
 	res, err := grequests.Get(url)
 	if err != nil {
 		log.Fatalln("Unable to make request: ", err)
