@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"github.com/denisqsound/sdelay_normalno/blacklist_test/api"
 	"github.com/joho/godotenv"
 	"log"
 )
@@ -15,7 +13,7 @@ func init() {
 }
 
 func main() {
-	auth := api.GetAuth()
-	fmt.Println(auth)
+	//auth := api.GetAuth()
+	//fmt.Println(auth)
 
 }

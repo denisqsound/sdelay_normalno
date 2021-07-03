@@ -1,23 +1,17 @@
-package main
+package planets
 
 import (
 	"fmt"
-	"log"
+	. "github.com/denisqsound/sdelay_normalno/star_wars_test/models"
 	"github.com/levigross/grequests"
+	"log"
 )
 
-const (
-	BaseUrl = "https://swapi.dev/api/"
-	Planets = "%s/planets/"
-)
+const BaseUrl = "https://swapi.dev/api/"
 
-// TODO Как передать номер планеты?
-//var jsonContentType = map[string]string{"Content-Type": "application/json"}
-
-func GetPlanet() {
-	//url := fmt.Printf(Planets, BaseUrl)
-	url := fmt.Sprintf()
-	res, err := grequests.Get(url)
+func GetPlanet(PlanetNumber int) *Planet {
+	url := fmt.Sprintf("%s/planets/%d", BaseUrl, PlanetNumber)
+	res, err := grequests.Get(url, nil)
 	if err != nil {
 		log.Fatalln("Unable to make request: ", err)
 	}
@@ -27,6 +21,6 @@ func GetPlanet() {
 	if err != nil {
 		log.Fatalln("Unable to make request: ", err)
 	}
-	return resp
+	return &resp
 
 }
