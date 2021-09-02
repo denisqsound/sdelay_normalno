@@ -13,5 +13,4 @@ func main() {
 		fmt.Println(scanner.Text())
 	}
 	file.Close()
-
 }
